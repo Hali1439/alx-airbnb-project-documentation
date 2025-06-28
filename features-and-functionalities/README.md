@@ -1,5 +1,5 @@
 # 📌 Features and Functionalities – Airbnb Clone Backend
-
+![feature and functionalities](https://github.com/Hali1439/alx-airbnb-project-documentation/blob/bbb40985724931f970c51b0db8651b42931b19aa/features-and-functionalities/features-and-functionalities.png)
 This document outlines the **key features and functionalities** required for the backend of the Airbnb Clone project. These features are based on core requirements, technical needs, and non-functional expectations to ensure the system is secure, scalable, and efficient.
 
 ---
