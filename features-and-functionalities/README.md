@@ -1,91 +1,56 @@
-# 🏡 Airbnb Clone Backend — Features & Functionalities
+# 📌 Features and Functionalities – Airbnb Clone Backend
 
-This document provides a structured overview of the core features and functionalities required for the backend of the Airbnb Clone project. These features are grouped into **core**, **technical**, and **non-functional** requirements based on system design principles.
-
----
-
-## 📌 Core Functionalities
-
-### 1. 👤 User Management
-- User registration as guest or host
-- Secure login with email/password and OAuth (Google, Facebook)
-- JWT-based authentication
-- Profile updates (photo, contact, preferences)
-
-### 2. 🏘️ Property Listings
-- Host can add/edit/delete property listings
-- Fields: title, description, location, price, availability, amenities
-- Upload property images
-
-### 3. 🔍 Search & Filtering
-- Search by location, price, guests, amenities
-- Filters: Wi-Fi, pool, pet-friendly, etc.
-- Support for pagination
-
-### 4. 📅 Booking Management
-- Book property with check-in/check-out dates
-- Prevent double booking
-- Cancel bookings (by user or host)
-- Track booking statuses: pending, confirmed, canceled, completed
-
-### 5. 💳 Payment Integration
-- Integrate Stripe/PayPal for secure payments
-- Guests pay upfront
-- Hosts receive payouts after completion
-- Multi-currency support
-
-### 6. ⭐ Reviews & Ratings
-- Guests can review properties
-- Hosts can reply
-- Reviews are linked to bookings
-
-### 7. 🔔 Notifications
-- Email & in-app alerts for:
-  - Booking confirmations
-  - Cancellations
-  - Payment updates
-
-### 8. 🛠️ Admin Dashboard
-- Monitor and manage:
-  - Users
-  - Listings
-  - Bookings
-  - Payments
+This document outlines the **key features and functionalities** required for the backend of the Airbnb Clone project. These features are based on core requirements, technical needs, and non-functional expectations to ensure the system is secure, scalable, and efficient.
 
 ---
 
-## ⚙️ Technical Requirements
+## 🔑 Core Functionalities
+- **User Management**:  
+  Users can register or log in (via JWT or OAuth) and update their profiles.
 
-- **Database**: PostgreSQL or MySQL
-- **API**: RESTful endpoints (GraphQL optional)
-- **Authentication**: JWT, Role-Based Access Control (RBAC)
-- **File Upload**: Image storage using local file system (or cloud in production)
-- **Email Service**: SendGrid/Mailgun for communication
-- **Error Handling**: Centralized error logging and response structure
+- **Property Listings**:  
+  Hosts can add, edit, or delete their property listings.
+
+- **Search and Filtering**:  
+  Guests can search listings by location, price, number of guests, and amenities.
+
+- **Booking Management**:  
+  Guests can book, cancel, and view booking statuses (e.g., confirmed, canceled).
+
+- **Payment Integration**:  
+  Secure payments through Stripe or PayPal with support for multiple currencies.
+
+- **Reviews and Ratings**:  
+  Guests can leave reviews, and hosts can respond. Each review is tied to a completed booking.
+
+- **Notifications**:  
+  Email and in-app alerts for booking confirmations, cancellations, and payment updates.
+
+- **Admin Dashboard**:  
+  Admins can monitor and manage users, properties, bookings, and payments.
+
+---
+
+## 🛠️ Technical Requirements
+- **Database**: PostgreSQL or MySQL  
+- **API**: RESTful endpoints with standard HTTP methods  
+- **Authentication**: JWT tokens with Role-Based Access Control (RBAC)  
+- **File Storage**: AWS S3 or Cloudinary  
+- **Email Service**: SendGrid or Mailgun  
+- **Logging**: Global error handling with system-wide logging mechanisms
 
 ---
 
 ## 🚀 Non-Functional Requirements
-
-- **Scalability**: Modular, horizontally scalable system
-- **Security**: Data encryption, firewalls, rate-limiting
-- **Performance**: Use Redis for caching, optimize queries
-- **Testing**: Unit and integration tests with `pytest` and automated API testing
-
----
-
-## 📊 Visual Overview
-
-The diagram below illustrates all the backend features and interactions between core modules:
-
-![Airbnb Backend Features Diagram](./airbnb-features.png)
-
-> This image was created using Draw.io and exported as `airbnb-features.png`. It visually maps Users, Properties, Bookings, Reviews, Payments, and Admin flows.
+- **Scalability**: Modular design with load balancing  
+- **Security**: Data encryption, firewalls, rate limiting  
+- **Performance**: Caching with Redis and optimized DB queries  
+- **Testing**: Unit and API testing using tools like `pytest`
 
 ---
 
-## ✅ Summary
+## 🖼 Feature Map Diagram
 
-This documentation defines the complete backend scope for the Airbnb Clone project, ensuring a secure, scalable, and production-ready architecture.
+Below is a visual representation of the system’s features and their classification:
 
-
+![Backend Feature Map](./features-and-functionalities.png)
