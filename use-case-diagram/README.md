@@ -66,4 +66,5 @@ To clearly define and document the core use cases supported by the backend of th
 ---
 
 ## 📁 File Structure
+![user-case-diagram](https://github.com/Hali1439/alx-airbnb-project-documentation/blob/2eb4e515467c97f25060453379aeb2c1a0172e9f/use-case-diagram/User%20case%20diagram.png)
 
